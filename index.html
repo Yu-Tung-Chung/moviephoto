@@ -10,43 +10,63 @@
 </head>
 
 <body>
-	<div data-role="page">
+	<div data-role="page" id="menu" >
 
-		<div data-role="header">
+		<div data-role="header" data-theme="b">
+				
 			<h1>Page Title</h1>
 		</div><!-- /header -->
+ 
+		<ul data-role="listview" data-autodividers="true" data-filter="true" data-inset="true">
+				    <li><a href=#CAKE_A>CAKE A</a></li>
+				    <li><a href=#CAKE_B>CAKE B</a></li>
+				    <li><a href="coffee.html">COFFEE MENU</a></li>
+				    <li><a href="index.html">Bob Cabot</a></li>
+				    <li><a href="index.html">Caleb Booth</a></li>
+				    <li><a href="index.html">Christopher Adams</a></li>
+				    <li><a href="index.html">Culver James</a></li>
+				</ul>
+
+
 
 		<div role="main" class="ui-content">
 			<div class="ui-grid-c" style="text-align: center">
 				    <div class="ui-block-a" style="border:1px #0fff87 solid;">
 					<div>
-						<img src="images/cake1.png"
-							style="border:1px #ff0000 solid; width: 50%; margin: 5px 15px 5 px 18px;">
-						<p>Function A</p>
+						<a href="#CAKE_A"  data-transition="pop" >
+							<img src="images/cake1.png"
+								style="border:1px #ff0000 solid; width: 50%; margin: 5px 15px 5 px 18px;">
+							<p>CAKE A</p>
+						</a>
 					</div>
 					</div>
 
 				    <div class="ui-block-b">
 					<div>
+						<a href="#CAKE_B" data-transition="flip">
 						<img src="images/cake2.png" width="150px"
 							style="border:1px #ffff00 solid; width: 50%; margin: 5px 15px 5 px 18px;">
-						<p>Function B</p>
+						<p>CAKE B</p>
+						</a>
 					</div>
 					</div>
 
 				    <div class="ui-block-c">
 					<div>
+						<a href="#Pudding Cake">
 						<img src="images/cake3.png" width="150px"
 							style="border:1px #f00ff0 solid; width: 50%; margin: 5px 15px 5 px 18px;">
-						<p>Function C</p>
+						<p>Pudding Cake</p>
+						</a>
 					</div>
 					</div><!-- /grid-b -->
 					
 					    <div class="ui-block-d">
 							<div>
-								<img src="images/cake7.jpg" width="150px"
+								<a href="coffee.html">
+								<img src="images/coffee.jpg" width="150px"
 									style="border:1px #f00ff0 solid; width: 50%; margin: 5px 15px 5 px 18px;">
-								<p>Function D</p>
+								<p>COFFEE</p>
 							</div>
 							</div>
 
@@ -89,6 +109,84 @@
 		<h4>&copy;all rights revised</h4>
 	</div><!-- /footer -->
 	</div><!-- /page -->
+
+	
+	<div data-role="page" id="CAKE_A">
+
+		<div data-role="header" data-position="fixed">
+			<h1>Bar</h1>
+			    <a href="#menu" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-power">Back</a>
+
+		</div><!-- /header -->
+	
+		<div role="main" class="ui-content" >
+				<img src="images/cake1.png"
+				style="border:1px #ff0000 solid; width: 50%; margin: 5px 15px 5 px 18px;">
+				<img src="images/cake1.png"
+				style="border:1px #ff0000 solid; width: 50%; margin: 5px 15px 5 px 18px;">
+				<img src="images/cake1.png"
+				style="border:1px #ff0000 solid; width: 50%; margin: 5px 15px 5 px 18px;">
+				<img src="images/cake1.png"
+				style="border:1px #ff0000 solid; width: 50%; margin: 5px 15px 5 px 18px;">
+				<img src="images/cake1.png"
+				style="border:1px #ff0000 solid; width: 50%; margin: 5px 15px 5 px 18px;">
+				<img src="images/cake1.png"
+				style="border:1px #ff0000 solid; width: 50%; margin: 5px 15px 5 px 18px;">
+				<img src="images/cake1.png"
+				style="border:1px #ff0000 solid; width: 50%; margin: 5px 15px 5 px 18px;">
+				<img src="images/cake1.png"
+				style="border:1px #ff0000 solid; width: 50%; margin: 5px 15px 5 px 18px;">
+				<img src="images/cake1.png"
+				style="border:1px #ff0000 solid; width: 50%; margin: 5px 15px 5 px 18px;">
+				<img src="images/cake1.png"
+				style="border:1px #ff0000 solid; width: 50%; margin: 5px 15px 5 px 18px;">
+				<img src="images/cake1.png"
+				style="border:1px #ff0000 solid; width: 50%; margin: 5px 15px 5 px 18px;">
+				<img src="images/cake1.png"
+				style="border:1px #ff0000 solid; width: 50%; margin: 5px 15px 5 px 18px;">
+
+			<p><a href="#menu">Back to menu</a></p>
+		</div><!-- /content -->
+	
+		<div data-role="footer" data-position="fixed">
+			<h4>Page CAEK A Footer</h4>
+		</div><!-- /footer -->
+	</div><!-- /page -->
+
+	<div data-role="page" id="CAKE_B">
+
+			<div data-role="header">
+					<h1>Bar</h1>
+					    <a href="#menu" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-power">Back</a>
+			</div><!-- /header -->
+		
+			<div role="main" class="ui-content">
+					<img src="images/cake2.png" width="150px"
+					style="border:1px #ffff00 solid; width: 50%; margin: 5px 15px 5 px 18px;">
+				<p><a href="#menu">Back to menu</a></p>
+			</div><!-- /content -->
+		
+			<div data-role="footer">
+				<h4>Page Footer</h4>
+			</div><!-- /footer -->
+		</div><!-- /page -->
+
+		<div data-role="page" id="Pudding Cake">
+
+				<div data-role="header">
+					<h1>Bar</h1>
+				</div><!-- /header -->
+			
+				<div role="main" class="ui-content">
+						<img src="images/cake3.png" width="150px"
+							style="border:1px #f00ff0 solid; width: 50%; margin: 5px 15px 5 px 18px;">
+					<p><a href="#menu">Back to menu</a></p>
+				</div><!-- /content -->
+			
+				<div data-role="footer">
+					<h4>Page Footer</h4>
+				</div><!-- /footer -->
+			</div><!-- /page -->
 </body>
 
 </html>
