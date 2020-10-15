@@ -10,15 +10,15 @@
 </head>
 
 <body>
-	<div data-role="page" id="CAKE_B">
+	<div data-role="page" id="coffeemanu">
 
 			<div data-role="header">
 					<h1>Bar</h1>
-					    <a href="index.html" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-power">Back</a>
+					    <a href="index.html" rel="external" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-power">Back</a>
 			</div><!-- /header -->
         
             <ul data-role="listview" data-inset="true">
-                        <li><a href="#">
+                        <li><a href="#coffee1">
                             <img src="images/coffee.jpg">
                         <h2>MOCHA</h2><span class="ui-li-count" style="color:white; background-color: red" >180 NT$</span>
                         <p>2/5濃縮咖啡、2/5熱巧克力、1/5蒸氣牛奶</p></a>
@@ -43,8 +43,7 @@
 
 
 			<div role="main" class="ui-content">
-
-				<p><a href="#menu">Back to menu</a></p>
+				<p><a href="index.html" rel="external">Back to menu</a></p>
 			</div><!-- /content -->
 		
 			<div data-role="footer">
@@ -52,7 +51,28 @@
 			</div><!-- /footer -->
 		</div><!-- /page -->
 
+        
 
+
+        
+
+        <div data-role="page" id="coffee1">
+
+            <div data-role="header" data-position="fixed">
+                <h1>Bar</h1>
+                <a href="#coffeemanu" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-power">Back</a>
+            </div><!-- /header -->
+    
+            <div role="main" class="ui-content">
+                <img src="images/coffee.jpg" width="150px"
+                    style="border:1px #ffff00 solid; width: 50%; margin: 5px 15px 5 px 18px;">
+                <p><a href="#coffeemanu">Back to menu</a></p>
+            </div><!-- /content -->
+    
+            <div data-role="footer" data-position="fixed">
+                <h4>Page Footer</h4>
+            </div><!-- /footer -->
+        </div><!-- /page -->
 </body>
 
 </html>
